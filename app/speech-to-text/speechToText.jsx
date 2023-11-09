@@ -5,7 +5,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import useClipboard from "react-use-clipboard";
 
 const SpeechToText = () => {
-  const [transcription, setTranscription] = useState("");
+  const [transcription, setTranscription] = useState("dkfjhglksdjhg dfgksdhg dgsd gsdgsd g dfg  dfg  dkfjhglksdjhg dfgksdhg dgsd gsdgsd g dfg  dfg  dkfjhglksdjhg dfgksdhg dgsd gsdgsd g dfg  dfg  dkfjhglksdjhg dfgksdhg dgsd gsdgsd g dfg  dfg  dkfjhglksdjhg dfgksdhg dgsd gsdgsd g dfg  dfg  dkfjhglksdjhg dfgksdhg dgsd gsdgsd g dfg  dfg  dkfjhglksdjhg dfgksdhg dgsd gsdgsd g dfg  dfg  ");
   const [isCopied, setCopied] = useClipboard(transcription);
   const [isListening, setIsListening] = useState(false);
 

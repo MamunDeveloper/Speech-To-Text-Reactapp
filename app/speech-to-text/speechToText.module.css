@@ -19,9 +19,12 @@
 }
 
 .transcript {
-  border: 2px solid black;
-  border-radius: 22px;
   height: 42vh;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  padding: 0.5rem 1rem;
+  border-radius: 22px;
   overflow: auto;
 }
 
@@ -38,9 +41,13 @@
   background-color: #6dc8e1;
 }
 
-@media (max-width: 335px) {
+@media (max-width: 400px) {
+  .transcript {
+    padding: 2rem 1rem;
+  }
+
   .container {
-    width: 90vw;
+    width: 92vw;
     height: 88vh;
     border-radius: 0;
     margin: 0;
