@@ -1,7 +1,6 @@
 .container {
   border-radius: 18px;
   width: 70%;
-  height: 60vh;
   overflow: auto;
   padding: 2rem 1rem;
   margin: 2rem auto;
@@ -41,15 +40,63 @@
   background-color: #6dc8e1;
 }
 
+.start_btn,
+.stop_btn {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.3rem 0;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid rgb(255 255 255);
+}
+.start_btn {
+  background-color: rgb(212 237 239);
+  border: 2px solid red;
+}
+.stop_btn {
+  background-color: rgb(255 17 17);
+  border: 2px solid rgb(255 255 255);
+}
+
+@media (max-width: 840px) {
+  .container {
+    box-sizing: border-box;
+    border-radius: 0;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+}
+
+@media (max-width: 610px) {
+  .button_box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .btn {
+    width: 35%;
+    padding: 0.5rem;
+    background-color: #97d1e1;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0.2rem 0;
+  }
+}
+
 @media (max-width: 400px) {
   .transcript {
     padding: 2rem 1rem;
   }
 
-  .container {
+  /* .container {
     width: 92vw;
-    height: 88vh;
+    height: 89vh;
     border-radius: 0;
     margin: 0;
-  }
+  } */
 }
