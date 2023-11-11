@@ -24,17 +24,23 @@
 }
 
 .transcript {
+  display: flex;
+  align-items: center;
   height: 42vh;
   width: 94%;
   text-align: center;
   font-family: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
   font-size: medium;
-  display: flex;
-  align-items: center;
-  border: 2px solid black;
+  background-color: #bbe7fb;
+  border: 2px solid white ;
+  outline: none;
   padding: 1rem 1rem;
   border-radius: 22px;
   overflow: auto;
+}
+.transcript:focus {
+  box-shadow: 2px 2px 20px rgb(36 39 39);
+  border: none;
 }
 
 .btn {
@@ -61,7 +67,7 @@
   cursor: pointer;
 }
 .start_btn {
-  background-color: rgb(212 237 239);
+  background-color: rgb(240 242 242);
   border: 2px solid red;
 }
 .stop_btn {
