@@ -17,12 +17,22 @@
   width: 100%;
 }
 
+.text_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .transcript {
   height: 42vh;
+  width: 94%;
+  text-align: center;
+  font-family: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
+  font-size: medium;
   display: flex;
   align-items: center;
   border: 2px solid black;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 22px;
   overflow: auto;
 }
@@ -48,6 +58,7 @@
   padding: 1rem;
   border-radius: 50%;
   border: 2px solid rgb(255 255 255);
+  cursor: pointer;
 }
 .start_btn {
   background-color: rgb(212 237 239);
@@ -92,11 +103,4 @@
   .transcript {
     padding: 2rem 1rem;
   }
-
-  /* .container {
-    width: 92vw;
-    height: 89vh;
-    border-radius: 0;
-    margin: 0;
-  } */
 }

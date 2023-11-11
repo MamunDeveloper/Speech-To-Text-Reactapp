@@ -15,7 +15,8 @@
     "react-dom": "^18",
     "react-speech-recognition": "^3.10.0",
     "react-use-clipboard": "^1.0.9",
-    "regenerator-runtime": "^0.14.0"
+    "regenerator-runtime": "^0.14.0",
+    "typo-js": "^1.2.3"
   },
   "devDependencies": {
     "eslint": "^8",

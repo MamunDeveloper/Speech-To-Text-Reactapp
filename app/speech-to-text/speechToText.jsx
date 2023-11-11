@@ -55,11 +55,13 @@ const SpeechToText = () => {
   };
 
   // Additional functions
-  const handleDelete = () => {
-    setTranscription("");
-    console.log(transcription);
+  const handleChange = (e) => {
+    setTranscription(e.target.value);
   };
 
+  const handleDelete = () => {
+    setTranscription("");
+  };
   const handleLowerCase = () => {
     let text = transcription;
     setTranscription(text.toLowerCase());
@@ -74,7 +76,11 @@ const SpeechToText = () => {
       <div className={styles.text_box}>
         <h1 className={styles.heading}>Speech to Text</h1>
         <p>Transcription: </p>
-        <div className={styles.transcript}>{transcription}</div>
+        <textarea
+          value={transcription}
+          onChange={handleChange}
+          className={styles.transcript}
+        ></textarea>
 
         <button
           onClick={toggleListening}
